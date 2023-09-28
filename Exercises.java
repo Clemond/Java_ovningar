@@ -4,15 +4,34 @@ public class Exercises{
 
     public static void main(String [] args){
         if5();
-        if4();
-        if3();
-        if2();
-        if1();
+        // if4();
+        // if3();
+        // if2();
+        // if1();
     }
 
     public static void if5(){
-        // Be användaren ange vilken kategori den tillhör-vuxen, pensionär, student. Om den är pensionär eller student kostar resan 20 kr . Om den är vuxen kostar resan 30 kr . Annars skall användaren informeras att den har angett en felaktig kategori.
-        
+        // Be användaren ange vilken kategori den tillhör-vuxen, pensionär, student. 
+        // Om den är pensionär eller student kostar resan 20 kr . Om den är vuxen kostar resan 30 kr . 
+        // Annars skall användaren informeras att den har angett en felaktig kategori.
+
+        System.out.println("Vilken kategori tillhör du? Vuxen, pansionär eller student");
+        Scanner myScanner = new Scanner(System.in);
+             String inmatadKategori = myScanner.nextLine();
+             
+                if(inmatadKategori.equalsIgnoreCase("student")){
+                    System.out.println("Det kostar 20kr som student");
+                }
+                else if(inmatadKategori.equalsIgnoreCase("vuxen")){
+                    System.out.println("Det kostar 30kr som vuxen");
+                }
+                else if(inmatadKategori.equalsIgnoreCase("pansionär")){
+                    System.out.println("Det kostar 20kr som pansionär");
+                }
+                else{
+                    System.out.println("Felmeddelande! skriv in en av kategorierna!");
+                }
+         
         
     }
 
