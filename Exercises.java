@@ -3,11 +3,34 @@ import java.util.Scanner;
 public class Exercises{
 
     public static void main(String [] args){
-        if5();
+        if6();
+        // if5();
         // if4();
         // if3();
         // if2();
         // if1();
+    }
+
+    public static void if6(){
+        // Be användaren mata in sitt födelseår. Om det är större eller lika med 1980 men
+        // mindre än 1990, skriv ut –Du är född på 1980-talet. Om det är mindre än 2000 men
+        // större än eller lika med 1990 skriv ut- Du är född på 1990-talet. 
+        // Om det är mindre än 1980 eller större än eller lika med 2000, 
+        // skriv- Du är inte född på 1990 eller 1980-talen.
+
+        System.out.println("SKriv in ditt födelseår: ");
+        Scanner myScanner = new Scanner(System.in);
+        int inmatatÅr = myScanner.nextInt();
+
+        if((inmatatÅr >= 1980) && (inmatatÅr < 1990)){
+            System.out.println("Du är född på 1980-talet.");
+        }
+        else if((inmatatÅr < 2000) && (inmatatÅr >= 1990)){
+            System.out.println("Du är förr på 1990-talet");
+        }
+        else if((inmatatÅr < 1980) || (inmatatÅr >= 2000)){
+            System.out.println("Du är inte född på 1990 eller 1980-talet");
+        }
     }
 
     public static void if5(){
