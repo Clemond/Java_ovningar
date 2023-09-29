@@ -3,8 +3,10 @@ import java.util.Scanner;
 public class Exercises{
 
     public static void main(String [] args){
+        
+         loop1();
 
-           if8();
+        // if8();
         // if7();
         // if6();
         // if5();
@@ -12,6 +14,14 @@ public class Exercises{
         // if3();
         // if2();
         // if1();
+    }
+
+    public static void loop1(){
+        // Skapa ett program som skriver ut talen 0-10 på skärmen. Lös detta med en for-loop.
+
+        for(int i = 0; i < 11; i++){
+            System.out.println(i);
+        }
     }
 
     public static void if8(){
