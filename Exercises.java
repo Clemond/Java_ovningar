@@ -4,13 +4,56 @@ public class Exercises{
 
     public static void main(String [] args){
 
-        if7();
+           if8();
+        // if7();
         // if6();
         // if5();
         // if4();
         // if3();
         // if2();
         // if1();
+    }
+
+    public static void if8(){
+        // Be användaren mata in en summa på hur mycket pengar den har. Be sedan
+        // användaren att ange om den har rabatt.
+        // a. Om summan är mellan 15 och 25 och användaren inte har rabatt, skriv – Du kan köpa en liten
+        // hamburgare.
+        // b. Om summan är mellan 15 och 25 och användaren har rabatt, skriv – Du kan köpa en liten
+        // hamburgare och en pommes frites.
+        // c. Om summan är större än 25 och mindre än eller lika med 50 och användaren inte har rabatt,
+        // skriv – Du kan köpa en stor hamburgare.
+        // d. Om summan är större än 25 och mindre än eller lika med 50 och användaren har rabatt, skriv –
+        // Du kan köpa en stor hamburgare och pommes frites.
+        // e. Om summan är större än 60 eller om den är 50 och användaren har rabatt, skriv – Du kan
+        // köpa ett meal med dryck.
+
+        System.out.println("Hur mycket pengar har du?");
+        Scanner myScanner = new Scanner(System.in);
+        int inmatadePengar = myScanner.nextInt();
+
+        System.out.println("Har du rabatt?");
+        myScanner = new Scanner(System.in);
+        String inmatadRabatt = myScanner.nextLine();
+
+        if((inmatadePengar >= 15) && (inmatadePengar <= 25) && (inmatadRabatt.equalsIgnoreCase("nej"))){
+            System.out.println("Du kan köpa en liten hamburgare!");
+        }
+        else if((inmatadePengar >= 15) && (inmatadePengar <= 25) && (inmatadRabatt.equalsIgnoreCase("ja"))){
+            System.out.println("Du kan köpa en liten hamburgare och en pommes frites");
+        }
+        else if((inmatadePengar > 25) && (inmatadePengar <= 50) && (inmatadRabatt.equalsIgnoreCase("nej"))){
+            System.out.println("Du kan köpa en stor hamburgare");
+                }
+        else if((inmatadePengar > 25) && (inmatadePengar <= 50) && (inmatadRabatt.equalsIgnoreCase("ja"))){
+            System.out.println("Du kan köpa en stor hamburgare och pommes frites");
+        }
+        else if((inmatadePengar > 60) || ((inmatadePengar > 50) && (inmatadRabatt.equalsIgnoreCase("ja")))){
+            System.out.println("Du kan köpa ett meal med dryck");
+        }
+        else if((inmatadePengar > 60) || ((inmatadePengar > 50) && (inmatadRabatt.equalsIgnoreCase("nej")))){
+            System.out.println("Du kan köpa en stor hamburgare ich pommes frites");
+        }
     }
 
     public static void if7(){
