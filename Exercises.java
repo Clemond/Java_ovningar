@@ -3,12 +3,31 @@ import java.util.Scanner;
 public class Exercises{
 
     public static void main(String [] args){
-        if6();
+
+        if7();
+        // if6();
         // if5();
         // if4();
         // if3();
         // if2();
         // if1();
+    }
+
+    public static void if7(){
+        // Be användaren att mata in namnet på ett land där den bor. Om det är Sverige,
+        // Danmark, eller Norge skall användare informeras att-Du bor i Skandinavien. Om
+        // inte meddela användaren att den inte bor i Skandinavien.
+
+        System.out.println("Vilket land bor du i?");
+        Scanner myScanner = new Scanner(System.in);
+        String inmatatLand = myScanner.nextLine();
+
+        if ((inmatatLand.equalsIgnoreCase("sverige") || inmatatLand.equalsIgnoreCase("norge") || inmatatLand.equalsIgnoreCase("danmark"))) {
+            System.out.println("Du bor i Skandinavien");
+        }
+        else{
+            System.out.println("Dui bor INTE i Skandinavien");
+        }
     }
 
     public static void if6(){
