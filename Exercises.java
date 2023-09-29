@@ -3,7 +3,8 @@ import java.util.Scanner;
 public class Exercises{
 
     public static void main(String [] args){
-        loop3();
+        loop4();
+        // loop3();
         // loop2();
         // loop1();
 
@@ -16,8 +17,23 @@ public class Exercises{
         // if2();
         // if1();
     }
-    public static void loop3(){
+    public static void loop4(){
+        // Be användaren mata in ett tal. Spara värdet i en variabel. Upprepa detta 10 gånger. 
+        // För varje gång lägg till det inmatade värdet till variabelns värde. 
+        // När det är klart skriv ut- Summan av det du matat in är: summan.
 
+        int summa = 0;
+
+        for(int i = 1; i <= 10; i++){
+            System.out.println("Skriv in tal:");
+            Scanner myScanner = new Scanner(System.in);
+            int userNumber = myScanner.nextInt();
+            summa = summa + userNumber;
+        }
+        System.out.println("Din summa blev:" + summa);
+}
+
+    public static void loop3(){
         // Skapa ett program där användaren
         // a. Får mata in två tal.
         // b. Skriv sedan till skärmen summan av de två talen.
