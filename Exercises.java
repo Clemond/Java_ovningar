@@ -3,7 +3,8 @@ import java.util.Scanner;
 public class Exercises{
 
     public static void main(String [] args){
-        loop4();
+        loop5();
+        // loop4();
         // loop3();
         // loop2();
         // loop1();
@@ -17,6 +18,18 @@ public class Exercises{
         // if2();
         // if1();
     }
+    public static void loop5(){
+        // Skapa ett program där användaren får mata in ett tal. Låt sedan programmet skriva ut
+        // alla siffror som är mindre än det inmatade talet men större än 0. Lös detta med en loop.
+        System.out.println("Skriv in tal:");
+        Scanner myScanner = new Scanner(System.in);
+        int userNumber = myScanner.nextInt();
+
+        for(int i = userNumber-1; i > 0; i--){
+            System.out.println(i);
+        }
+    }
+
     public static void loop4(){
         // Be användaren mata in ett tal. Spara värdet i en variabel. Upprepa detta 10 gånger. 
         // För varje gång lägg till det inmatade värdet till variabelns värde. 
