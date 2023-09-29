@@ -3,8 +3,8 @@ import java.util.Scanner;
 public class Exercises{
 
     public static void main(String [] args){
-
-        loop2();
+        loop3();
+        // loop2();
         // loop1();
 
         // if8();
@@ -16,6 +16,41 @@ public class Exercises{
         // if2();
         // if1();
     }
+    public static void loop3(){
+
+        // Skapa ett program där användaren
+        // a. Får mata in två tal.
+        // b. Skriv sedan till skärmen summan av de två talen.
+        // c. Skriv sedan en fråga- Vill du fortsätta(J/N)?.
+        // d. Svarar användaren J återupprepas punkt a-c
+        // e. Svarar användaren N avbryts programmet
+
+        while(true){
+        System.out.println("Skriv in tal 1:");
+        Scanner myScanner = new Scanner(System.in);
+        int tal1 = myScanner.nextInt();
+
+        System.out.println("Skriv in tal 2:");
+        myScanner = new Scanner(System.in);
+        int tal2 = myScanner.nextInt();
+
+        int summa = tal1 + tal2;
+        System.out.println("summan av talen är " + summa );
+
+        System.out.println("Vill du fortsätta? J/N");
+        myScanner = new Scanner(System.in);
+        String jaEllerNej = myScanner.nextLine(); 
+
+        if(jaEllerNej.equalsIgnoreCase("j")){
+            System.out.println("Nu fortsätter spelet!");
+            continue;
+        }
+        else if(jaEllerNej.equalsIgnoreCase("n"))
+            System.out.println("Tack för att du spelade!");
+            break;
+        }
+    }
+
     public static void loop2(){
         // Skapa ett program där användaren får mata in två tal. Låt sedan programmet skriva ut alla
         // tal som finns mellan dessa två tal på skärmen. Lös detta med en for-loop.
