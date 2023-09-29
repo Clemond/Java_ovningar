@@ -3,8 +3,9 @@ import java.util.Scanner;
 public class Exercises{
 
     public static void main(String [] args){
-        
-         loop1();
+
+        loop2();
+        // loop1();
 
         // if8();
         // if7();
@@ -14,6 +15,29 @@ public class Exercises{
         // if3();
         // if2();
         // if1();
+    }
+    public static void loop2(){
+        // Skapa ett program där användaren får mata in två tal. Låt sedan programmet skriva ut alla
+        // tal som finns mellan dessa två tal på skärmen. Lös detta med en for-loop.
+
+        System.out.println("Skriv in ett tal");
+        Scanner myScanner = new Scanner(System.in);
+        int tal1 = myScanner.nextInt();
+
+        System.out.println("Skriv in ett tal till");
+        myScanner = new Scanner(System.in);
+        int tal2 = myScanner.nextInt();
+
+        if(tal2 > tal1){
+            for(int i = tal1; i <= tal2; i++){
+                System.out.println(i);
+            }
+        }
+        else if(tal1 > tal2){
+            for(int i = tal1; i >= tal2; i--){
+                System.out.println(i);
+            }
+        }
     }
 
     public static void loop1(){
