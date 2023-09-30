@@ -1,9 +1,15 @@
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
+
+import javax.swing.text.Style;
 
 public class Exercises{
 
     public static void main(String [] args){
-        loop5();
+          list1();
+
+        // loop5();
         // loop4();
         // loop3();
         // loop2();
@@ -18,6 +24,24 @@ public class Exercises{
         // if2();
         // if1();
     }
+    public static void list1(){
+        // Skapa ett program där användaren får upp fyra frågor om att mata in ett tal. Spara
+        // alla talen i en lista. Loopa igenom listan och presentera innehåller i konsolen.
+
+        ArrayList<Integer> myList = new ArrayList<Integer>();
+
+        for(int i = 0; i < 4; i++){
+            System.out.println("Skriv in ett tal:");
+            Scanner myScanner = new Scanner(System.in);
+            int userNumber = myScanner.nextInt();
+            myList.add(userNumber);  
+        }
+
+        for (int i = 0; i < myList.size(); i++){
+            System.out.println("Dina sparade tal är " + (myList.get(i)));
+        }
+    }
+
     public static void loop5(){
         // Skapa ett program där användaren får mata in ett tal. Låt sedan programmet skriva ut
         // alla siffror som är mindre än det inmatade talet men större än 0. Lös detta med en loop.
