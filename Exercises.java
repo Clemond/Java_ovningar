@@ -1,13 +1,15 @@
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import java.util.Collections;
 
 import javax.swing.text.Style;
 
 public class Exercises{
 
     public static void main(String [] args){
-          list1();
+        list2();
+        //list1();
 
         // loop5();
         // loop4();
@@ -24,6 +26,29 @@ public class Exercises{
         // if2();
         // if1();
     }
+    public static void list2(){
+        // Skapa ett program där användaren får upp fyra frågor om att mata in ett tal. Spara
+        // alla talen i en lista. Loopa igenom listan och ta fram det tal som är störst. Skriv
+        // tillbaka resultatet på skärmen för användaren
+
+        ArrayList<Integer> myList = new ArrayList<>();
+
+        for(int i = 0; i < 4; i++){
+            System.out.println("Skriv in ett tal:");
+            Scanner myScanner = new Scanner(System.in);
+            int userNumber = myScanner.nextInt();
+            myList.add(userNumber);  
+        }
+        int largest = myList.get(0);
+
+        for (int i = 0; i < myList.size(); i++){
+            if(myList.get(i) > largest){
+                largest = myList.get(i);
+            }
+        }
+        System.out.println("Din högsta siffra är: " + largest);
+    }
+
     public static void list1(){
         // Skapa ett program där användaren får upp fyra frågor om att mata in ett tal. Spara
         // alla talen i en lista. Loopa igenom listan och presentera innehåller i konsolen.
