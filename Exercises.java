@@ -40,7 +40,8 @@ public class Exercises{
         // if2();
         // if1();
 
-        beräkningar();
+        merBeräkningar();
+        // beräkningar();
         // ålder();
         // inmatningOchSumma();
         // förOchEfternamn();
@@ -603,5 +604,17 @@ public class Exercises{
             System.out.println("summan av " + tal1 + " och " + tal2 + " är: " + summa);
             System.out.println("Medelvärdet är: " + medelvärde);
             System.out.println("Differensen mellan " + tal1 + " och " + tal2 + " är: " + differens );
+        }
+        public static void merBeräkningar(){
+            // Be användaren mata in en summa. Lägg på 25% moms dvs summan gånger 0,25 och
+            // skriv på skärmen den nya summan med moms.
+
+            System.out.print("Mata in en summa: ");
+            Scanner myScanner = new Scanner(System.in);
+            float userSumma = myScanner.nextFloat();
+
+            double summaAndMoms = userSumma * 1.25;
+
+            System.out.println("Din summa + moms: " + summaAndMoms);
         }
 }
