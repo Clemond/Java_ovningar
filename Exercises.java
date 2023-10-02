@@ -40,7 +40,8 @@ public class Exercises{
         // if2();
         // if1();
 
-        ålder();
+        beräkningar();
+        // ålder();
         // inmatningOchSumma();
         // förOchEfternamn();
         // stringOchInt();
@@ -580,5 +581,27 @@ public class Exercises{
 
             System.out.println("Nu är det år: " + thisYear);
             System.out.println("Din åler är: " + userAge);
+        }
+        public static void beräkningar(){
+            // Mata in två tal och returnera medelvärde, summa och differens mellan dessa tal
+            // a. Skriv in Mata in tal 1:. Ta emot i en variabel
+            // b. Skriv Mata in tal 2: . Ta emot i en variabel
+            // c. Räkna ut medelvärde, summa och differens mellan dessa två tal
+            // d. Skriv ut de beräknade värdena på skärmen
+            
+            System.out.print("Mata in tal 1: ");
+            Scanner myScanner = new Scanner(System.in);
+            float tal1 = myScanner.nextInt();
+            System.out.print("Mata in tal 2: ");
+            myScanner = new Scanner(System.in);
+            float tal2 = myScanner.nextInt();
+
+            float summa = tal1 + tal2;
+            float medelvärde = (tal1 + tal2) / 2;
+            float differens = tal1 - tal2;
+
+            System.out.println("summan av " + tal1 + " och " + tal2 + " är: " + summa);
+            System.out.println("Medelvärdet är: " + medelvärde);
+            System.out.println("Differensen mellan " + tal1 + " och " + tal2 + " är: " + differens );
         }
 }
