@@ -37,7 +37,8 @@ public class Exercises{
         // if2();
         // if1();
 
-        stringOchInt();
+        förOchEfternamn();
+        // stringOchInt();
 
     }
     public static void sträng6(){
@@ -522,6 +523,23 @@ public class Exercises{
             String name = "Nicholas";
             int age = 23;
             System.out.println("Jag heter " + name + " och är " + age + " år.");
+        }
+        public static void förOchEfternamn(){
+            // Skapa en applikation där användaren matar in för och efternamn.
+            // a. Skriv ut Skriv in ditt förnamn: . Ta emot värdet i en variabel
+            // b. Låt markören vänta på din inmatning på samma rad.
+            // c. Gör på samma sätt med efternamnet.
+            // d. Skriv sedan ut namnen i omvänd ordning.
+            // e. Se till att resultatet ser ut så här.
+
+            System.out.print("Skriv in din förnamn: ");
+            Scanner myScanner = new Scanner(System.in);
+            String forName = myScanner.nextLine();
+            System.out.print("Skriv in din efternamn: ");
+            myScanner = new Scanner(System.in);
+            String lastName = myScanner.nextLine();
+
+            System.out.println("Du heter: " + lastName + ", " + forName);
 
         }
 }
