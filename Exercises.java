@@ -9,7 +9,8 @@ import javax.swing.text.Style;
 public class Exercises{
 
     public static void main(String [] args){
-        sträng4();
+        sträng6();
+        // sträng4();
         // sträng3();
         // sträng2();
         // sträng1();
@@ -34,6 +35,18 @@ public class Exercises{
         // if3();
         // if2();
         // if1();
+    }
+    public static void sträng6(){
+        // Gör ett program där användaren får mata in en mening t ex ”Detta är min text
+        // som jag matar in”. Programmet skall räkna ut hur många ord meningen består av
+        // och meddela användaren om detta.
+
+        System.out.println("Skriv in en mening: ");
+        Scanner myScanner = new Scanner(System.in);
+        String mySentence = myScanner.nextLine();
+
+        int totalWords = mySentence.split("\\s").length;
+        System.out.println("Antalet ord i den meningen var: " + totalWords);
     }
     public static void sträng4(){
         // a) Du har strängen string namn="kurt andersson";
