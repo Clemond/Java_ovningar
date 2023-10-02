@@ -37,7 +37,8 @@ public class Exercises{
         // if2();
         // if1();
 
-        förOchEfternamn();
+        inmatningOchSumma();
+        // förOchEfternamn();
         // stringOchInt();
 
     }
@@ -540,6 +541,23 @@ public class Exercises{
             String lastName = myScanner.nextLine();
 
             System.out.println("Du heter: " + lastName + ", " + forName);
+        }
+        public static void inmatningOchSumma(){
+            // Skapa en applikation där användaren matar in två tal
+            // a. Skriv in Mata in tal 1:
+            // b. Ta emot detta tal i en variabel
+            // c. Skriv in Mata in tal 2:
+            // d. Ta emot värdet på detta tal
+            // e. Skriv ut på skärmen - Summan av tal 1 och tal 2 är: summan
 
+            System.out.print("Mata in tal 1: ");
+            Scanner myScanner = new Scanner(System.in);
+            int tal1 = myScanner.nextInt();
+            System.out.print("Mata in tal 2: ");
+            myScanner = new Scanner(System.in);
+            int tal2 = myScanner.nextInt();
+            int summa = tal1 + tal2;
+
+            System.out.println("Summan av " + tal1 + " och " + tal2 + " är: " + summa);
         }
 }
