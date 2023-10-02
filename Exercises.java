@@ -9,7 +9,8 @@ import javax.swing.text.Style;
 public class Exercises{
 
     public static void main(String [] args){
-        sträng6();
+        // sträng6();
+        sträng5();
         // sträng4();
         // sträng3();
         // sträng2();
@@ -35,6 +36,9 @@ public class Exercises{
         // if3();
         // if2();
         // if1();
+
+        stringOchInt();
+
     }
     public static void sträng6(){
         // Gör ett program där användaren får mata in en mening t ex ”Detta är min text
@@ -47,6 +51,10 @@ public class Exercises{
 
         int totalWords = mySentence.split("\\s").length;
         System.out.println("Antalet ord i den meningen var: " + totalWords);
+    }
+    public static void sträng5(){
+        // Du har en Sträng som heter containNumbers, skriv in “1234”, skriv kod som kontrollerar
+        // om strängen innehåller siffror eller ej.
     }
     public static void sträng4(){
         // a) Du har strängen string namn="kurt andersson";
@@ -506,4 +514,14 @@ public class Exercises{
             System.out.println("Talet är mindre än 10!");
         }
     }
+        public static void stringOchInt(){
+            // a. Skapa en variabel String name med ditt namn
+            // b. Skapa en int age med din ålder.
+            // c. Skriv sedan ut Jag heter Kalle (innehållet i name) och är 27(innehållet i age) år.
+
+            String name = "Nicholas";
+            int age = 23;
+            System.out.println("Jag heter " + name + " och är " + age + " år.");
+
+        }
 }
