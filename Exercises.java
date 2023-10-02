@@ -8,8 +8,9 @@ import javax.swing.text.Style;
 public class Exercises{
 
     public static void main(String [] args){
-        list2();
-        //list1();
+        list3();
+        // list2();
+        // list1();
 
         // loop5();
         // loop4();
@@ -26,6 +27,33 @@ public class Exercises{
         // if2();
         // if1();
     }
+    public static void list3(){
+        // Utöka uppgift 1 med en inledande fråga där användaren får ange hur många tal den
+        // vill mata in. Gör sedan samma sak för att ta fram det största talet.
+
+         ArrayList<Integer> myList = new ArrayList<>();
+
+         System.out.println("Hur många tal vill du skriva in?");
+         Scanner myScanner = new Scanner(System.in);
+         int antalInskrivnaNummer = myScanner.nextInt();
+
+        for(int i = 0; i < antalInskrivnaNummer; i++){
+            System.out.println("Skriv in ett tal:");
+             myScanner = new Scanner(System.in);
+            int userNumber = myScanner.nextInt();
+            myList.add(userNumber);  
+        }
+
+        int largest = myList.get(0);
+
+        for (int i = 0; i < myList.size(); i++){
+            if(myList.get(i) > largest){
+                largest = myList.get(i);
+            }
+        }   
+            System.out.println("Ditt högsta tal är: " + largest);
+    }
+
     public static void list2(){
         // Skapa ett program där användaren får upp fyra frågor om att mata in ett tal. Spara
         // alla talen i en lista. Loopa igenom listan och ta fram det tal som är störst. Skriv
@@ -46,7 +74,7 @@ public class Exercises{
                 largest = myList.get(i);
             }
         }
-        System.out.println("Din högsta siffra är: " + largest);
+        System.out.println("Din högsta siffra är: " + largest); 
     }
 
     public static void list1(){
