@@ -9,7 +9,8 @@ import javax.swing.text.Style;
 public class Exercises{
 
     public static void main(String [] args){
-        sträng1();
+        sträng2();
+        // sträng1();
 
         // list5();
         // list4();
@@ -32,6 +33,27 @@ public class Exercises{
         // if2();
         // if1();
     }
+    public static void sträng2(){
+        // Skapa ett program där du får skriva in två namn, jämför sedan bägge namnen med 
+        // metoden equals för att se om de bägge namnen överensstämmer.
+
+        System.out.println("Skriv in ett namn: ");
+        Scanner myScanner = new Scanner(System.in);
+        String myName1 = myScanner.nextLine();
+
+        System.out.println("Skriv in ett namn till: ");
+        myScanner = new Scanner(System.in);
+        String myName2 = myScanner.nextLine();
+
+        if(myName1.equalsIgnoreCase(myName2)){
+            System.out.println("Namnen matchade!");
+        }
+        else{
+            System.out.println("Ingen match hittades!");
+        }
+
+    }
+
     public static void sträng1(){
         // Be användaren mata in 3 strängar. Addera ihop strängarna och skriv ut alla tre
         // strängarna på skärmen
