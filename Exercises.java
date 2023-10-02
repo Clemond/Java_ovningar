@@ -8,7 +8,8 @@ import javax.swing.text.Style;
 public class Exercises{
 
     public static void main(String [] args){
-        list3();
+        list4();
+        // list3();
         // list2();
         // list1();
 
@@ -27,6 +28,34 @@ public class Exercises{
         // if2();
         // if1();
     }
+    public static void list4(){
+        // Skapa en array med namn evenNumbers, be användaren mata in ett nummer och ett annat nummer som
+        // är högre. Få fram alla nummer mellan dessa två nummer som användaren matade in.
+        // Lägg in alla nummer som är jämna dvs delbara med två i arrayen och printa sedan 
+        // ut den med en for each-loop.  
+
+        ArrayList<Integer> evenNumbers= new ArrayList<>();
+
+        System.out.println("Skriv in ett nummer:");
+        Scanner myScanner = new Scanner(System.in);
+        int lowNumber = myScanner.nextInt();
+
+        System.out.println("Skriv in ett till nummer som är större:");
+        myScanner = new Scanner(System.in);
+        int highNumber = myScanner.nextInt();
+
+        for(int i = highNumber; i >= lowNumber; i--){
+            if(i % 2 == 0){
+                evenNumbers.add(i);
+            }
+        }
+        System.out.println("Jämna tal som fanns med var:");
+        for (int i = 0; i < evenNumbers.size(); i++){
+            System.out.println((evenNumbers.get(i)));
+        }
+
+    }
+
     public static void list3(){
         // Utöka uppgift 1 med en inledande fråga där användaren får ange hur många tal den
         // vill mata in. Gör sedan samma sak för att ta fram det största talet.
