@@ -9,7 +9,9 @@ import javax.swing.text.Style;
 public class Exercises{
 
     public static void main(String [] args){
-        list5();
+        sträng1();
+
+        // list5();
         // list4();
         // list3();
         // list2();
@@ -30,6 +32,24 @@ public class Exercises{
         // if2();
         // if1();
     }
+    public static void sträng1(){
+        // Be användaren mata in 3 strängar. Addera ihop strängarna och skriv ut alla tre
+        // strängarna på skärmen
+        
+        ArrayList<String> myList = new ArrayList<>();
+
+        for(int i = 0; i < 3; i++){
+        System.out.println("Skriv in ett objekt: ");
+        Scanner myScanner = new Scanner(System.in);
+        String myObject = myScanner.nextLine();
+        myList.add(myObject);
+        }
+        
+        String summa = myList.get(0) + " " + myList.get(1) + " " + myList.get(2);
+        System.out.println(summa);
+        
+    }
+
     public static void list5(){
         // Skapa en array med heltal, int. Gör en loop och räkna ihop summan på alla tal i arrayen
 
