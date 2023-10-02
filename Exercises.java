@@ -1,3 +1,6 @@
+import java.time.LocalDate;
+import java.time.Period;
+import java.time.Year;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -37,7 +40,8 @@ public class Exercises{
         // if2();
         // if1();
 
-        inmatningOchSumma();
+        ålder();
+        // inmatningOchSumma();
         // förOchEfternamn();
         // stringOchInt();
 
@@ -559,5 +563,22 @@ public class Exercises{
             int summa = tal1 + tal2;
 
             System.out.println("Summan av " + tal1 + " och " + tal2 + " är: " + summa);
+        }
+        public static void ålder(){
+            // Skriv ett program som tar in ett födelseår från användaren.
+            // a. Ta emot födelseåret och räkna ut personens ålder
+            // b. Skriv på skärmen- Din ålder är : ålder
+            // c. Prova att sätta dagens datum i en variabel och utgå 
+            // från årtalet i detta datum i din beräkning.
+
+            System.out.print("Skriv in ditt födelseår ");
+            Scanner myScanner = new Scanner(System.in);
+            int birthYear = myScanner.nextInt();
+
+            int thisYear = Year.now().getValue();
+            int userAge = thisYear - birthYear;
+
+            System.out.println("Nu är det år: " + thisYear);
+            System.out.println("Din åler är: " + userAge);
         }
 }
