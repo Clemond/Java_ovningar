@@ -9,7 +9,8 @@ import javax.swing.text.Style;
 public class Exercises{
 
     public static void main(String [] args){
-        sträng2();
+        sträng3();
+        // sträng2();
         // sträng1();
 
         // list5();
@@ -33,6 +34,18 @@ public class Exercises{
         // if2();
         // if1();
     }
+
+    public static void sträng3(){
+        // Du har en strängvariabel som innehåller följande text, ”Hello, world”
+        // a. Skriv ut vilken position bokstaven w har i strängen (H har position 0). 
+        // Ta fram positionen genom kod.
+
+        String myString = "Hello, world";
+
+        System.out.println(myString.indexOf("w"));
+
+
+    }
     public static void sträng2(){
         // Skapa ett program där du får skriva in två namn, jämför sedan bägge namnen med 
         // metoden equals för att se om de bägge namnen överensstämmer.
@@ -51,7 +64,6 @@ public class Exercises{
         else{
             System.out.println("Ingen match hittades!");
         }
-
     }
 
     public static void sträng1(){
