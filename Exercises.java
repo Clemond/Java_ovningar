@@ -3,12 +3,14 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.Collections;
 
+import javax.swing.plaf.basic.BasicInternalFrameTitlePane.SystemMenuBar;
 import javax.swing.text.Style;
 
 public class Exercises{
 
     public static void main(String [] args){
-        list4();
+        list5();
+        // list4();
         // list3();
         // list2();
         // list1();
@@ -28,6 +30,18 @@ public class Exercises{
         // if2();
         // if1();
     }
+    public static void list5(){
+        // Skapa en array med heltal, int. Gör en loop och räkna ihop summan på alla tal i arrayen
+
+        int summa = 0;
+        int[] myList = {3,2,5,1,10};
+
+        for(int i = 0; i < myList.length; i++){
+            summa = summa + myList[i];
+        }
+        System.out.println("Summan blev: " + summa);
+    }
+
     public static void list4(){
         // Skapa en array med namn evenNumbers, be användaren mata in ett nummer och ett annat nummer som
         // är högre. Få fram alla nummer mellan dessa två nummer som användaren matade in.
