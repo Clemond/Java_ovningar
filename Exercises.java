@@ -9,7 +9,8 @@ import javax.swing.text.Style;
 public class Exercises{
 
     public static void main(String [] args){
-        sträng3();
+        sträng4();
+        // sträng3();
         // sträng2();
         // sträng1();
 
@@ -33,6 +34,20 @@ public class Exercises{
         // if3();
         // if2();
         // if1();
+    }
+    public static void sträng4(){
+        // a) Du har strängen string namn="kurt andersson";
+        // Skriv kod så att förnamnet i variabeln namn börjar med stora bokstäver.
+        // b) Skriv kod så att förnamn + efternamn i variablen namn börjar med stora bokstäver.
+        // Resultatet skall bli så här "Kurt Andersson"
+        
+        String namn = "kurt andersson";
+        System.out.println("Innan förändring: " + namn);
+        String nyttNamn = namn.replace('k', 'K');
+        nyttNamn = namn.replace('a', 'A');
+
+        System.out.println(nyttNamn);
+
     }
 
     public static void sträng3(){
