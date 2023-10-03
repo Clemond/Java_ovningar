@@ -13,7 +13,16 @@ import javax.swing.text.html.HTMLDocument.HTMLReader.SpecialAction;
 
 public class Exercises{
     public static void main(String [] args){
-        metoder3();
+    //     Skapa ett program där användaren får en fråga om att mata in sin ålder. 
+    //     Skapa en metod som tar emot det inmatade värdet och kontrollerar om användaren 
+    //     är myndig dvs över 18 år. Metoden returnerar sant eller falskt. Anropa metoden och 
+    //     skriv ut på skärmen om användaren är myndig eller ej.
+    System.out.println("Skriv in din ålder");
+    Scanner myScanner = new Scanner(System.in);
+    int userAge = myScanner.nextInt();
+    ageControl(userAge);
+    
+        // metoder3();
         // metoder2();
         // metoder1();
 
@@ -52,6 +61,15 @@ public class Exercises{
         // förOchEfternamn();
         // stringOchInt();
         
+    }
+    public static void ageControl(int age){
+        if(age < 18){
+            System.out.println("Du är inte myndig!");
+        }
+        else if (age >= 18){
+            System.out.println("Du är myndig!");
+        }
+        return;
     }
     public static void metoder3(){
         // Skapa en metod som räknar ut hur mycket momsen blir på en viss summa. 
