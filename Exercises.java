@@ -6,12 +6,16 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.Collections;
 
+import javax.swing.Spring;
 import javax.swing.plaf.basic.BasicInternalFrameTitlePane.SystemMenuBar;
 import javax.swing.text.Style;
+import javax.swing.text.html.HTMLDocument.HTMLReader.SpecialAction;
 
 public class Exercises{
     public static void main(String [] args){
-        metoder1();
+        metoder3();
+        // metoder2();
+        // metoder1();
 
         // sträng6();
         // sträng5();   // <---- INTE LÖST!
@@ -48,6 +52,30 @@ public class Exercises{
         // förOchEfternamn();
         // stringOchInt();
         
+    }
+    public static void metoder3(){
+        // Skapa en metod som räknar ut hur mycket momsen blir på en viss summa. 
+        // Summan skall vara en parameter av typen int. Metoden skall returnera momsvärdet
+
+        double moms = 0.25;
+        int userSum = 100; 
+
+        double totMoms = userSum * moms;
+
+        System.out.println("Momsen på " + userSum + "är: " +totMoms + "kr");
+    }
+    public static void metoder2(){
+        // Skapa ett program med en ny metod. Metoden skall ta emot två inparametrar av typen string 
+        // och slå ihop dom till en sträng och returnera det nya värdet. Anropa den nya metoden från
+        // main och skriv ut resultatet på skärmen.
+        String text1 = "Banan ";
+        String text2 = " Citron";
+
+        String sammanlagdString = text1 + text2;
+
+        System.out.println(sammanlagdString);
+
+
     }
     public static void printMessage(){
         System.out.println("Hello World!");
