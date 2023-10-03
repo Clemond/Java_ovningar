@@ -10,10 +10,11 @@ import javax.swing.plaf.basic.BasicInternalFrameTitlePane.SystemMenuBar;
 import javax.swing.text.Style;
 
 public class Exercises{
-
     public static void main(String [] args){
+        metoder1();
+
         // sträng6();
-        sträng5();
+        // sträng5();   // <---- INTE LÖST!
         // sträng4();
         // sträng3();
         // sträng2();
@@ -40,12 +41,24 @@ public class Exercises{
         // if2();
         // if1();
 
-        merBeräkningar();
+        // merBeräkningar();
         // beräkningar();
         // ålder();
         // inmatningOchSumma();
         // förOchEfternamn();
         // stringOchInt();
+        
+    }
+    public static void printMessage(){
+        System.out.println("Hello World!");
+            
+        
+    }
+    public static void metoder1(){
+        // Skapa ett program med en ny metod. Döp metoden till printMessage(). 
+        // Den skall returnera texten – ”Hello World!”.
+        printMessage();
+        
 
     }
     public static void sträng6(){
@@ -63,6 +76,7 @@ public class Exercises{
     public static void sträng5(){
         // Du har en Sträng som heter containNumbers, skriv in “1234”, skriv kod som kontrollerar
         // om strängen innehåller siffror eller ej.
+
     }
     public static void sträng4(){
         // a) Du har strängen string namn="kurt andersson";
